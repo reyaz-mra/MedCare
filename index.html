@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <!-- <a href="#" class="logo"><span>Med</span>Care</a> -->
+        <a href="#" class="logo"><img src="images/medcare.png" alt="" height="33px"></a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" onclick="navRemove()">home</a>
+            <a href="#about" onclick="navRemove()">about</a>
+            <a href="#predict" onclick="navRemove()">prediction</a>
+            <a href="requirement.html" onclick="navRemove()">requirement</a>
+            <a href="faqs.html" onclick="navRemove()">FAQs</a>
+            <a href="#contact" onclick="navRemove()">contact</a>
+        </nav>
+        
+        <div class="icon">
+            <!-- <i class="fa-brands fa-google-play" id="download" title="download app" onclick="alert('No App is linked here now')"></i> -->
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Making HealthCare Better Together </h3>
+        </div>
+        <div class="image">
+            <img src="images/backgimg.png" alt="">
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h1 class="heading">know us better</h1>
+        <div class="column reveal">
+            <div class="image">
+                <img src="images/abot.png" alt="">
+            </div>
+            <div class="content">
+                <p>MedCare is a disease prediction website. In this MedCare we can predict Heart and diabetes like disease by giving some symptoms as an input.<br>
+                     MedCare use different Machine Learning Algorithm to give accurate result.</p>
+                <!-- <a href="#" class="btn">read more here</a> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="predict">
+        <h1 class="heading">Prediction</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/heart.jpg">
+                <h3>Heart Disease</h3>
+                <a href="https://heart-disease-medcare.streamlit.app/" class="btn">Predict</a>
+            </div>
+
+            <div class="box">
+                <img src="images/diabetes.jpg">
+                <h3>Diabetes</h3>
+                <a href="https://diabetes-prediction-medcare.streamlit.app/" class="btn">Predict</a>
+            </div>
+        </div>
+     </section>
+
+
+
+
+    
+
+    <section class="contact" id="contact">
+        <div class="image">
+            <img src="images/contactus.png" alt="">
+        </div>
+        <form action="" class="reveal">
+            <h1 class="heading">contact us</h1>
+
+            <div class="inputBox">
+               <label>Mobile :</label>
+                <h2 style="margin-bottom: 2.5rem;">+91 93332 18790</h2>
+            </div>
+
+            <div class="inputBox">
+               <label>email</label>
+               <h2 style="margin-bottom: 2.5rem; text-transform: none;">mra78678@gmail.com</h2>
+           </div>
+
+           <div class="inputBox">
+               <label>Address</label>
+                  <h2>Kulti - West Bengal</h2>
+           </div>
+        </form>
+    </section>
+
+
+    <div class="footer">
+        <div class="box-container">
+
+           <div class="box">
+               <h3>about us</h3>
+               <p>MedCare is a disease prediction website. In this MedCare we can predict Heart and diabetes like disease by giving some symptoms as an input.<br>
+                MedCare use different Machine Learning Algorithm to give accurate result</p>
+           </div>
+           <div class="box">
+               <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#about">about</a>
+                <a href="#predict">prediction</a>
+                <a href="requirement.html">requirement</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="#contact">contact us</a>
+           </div>
+           <div class="box">
+               <h3>contact info</h3>
+               <div class="info">
+                   <i class="fas fa-phone"></i>
+                   <p>+91 93332 18790</p>
+               </div>
+               <div class="info">
+                   <i class="fas fa-envelope"></i>
+                   <p style="text-transform: none;"> mra78678@gmail.com </p>
+               </div>
+               <div class="info">
+                   <i class="fas fa-map-marker-alt"></i>
+                   <p>Kulti - West Bengal </p>
+               </div>
+           </div>
+        </div>
+        <h1 class="credit">&copy; copyright @2022 by Md Reyaz Alam</h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+         $(document).ready(function(){
+            $('.post-container').owlCarousel({
+                pagination:false,
+                autoplay:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    700:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    },
+                    1200:{
+                        items:4
+                    },
+                }
+            })
+        })
+
+
+        var mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+    </script>
+</body>
+</html>
